@@ -2,12 +2,10 @@ import React from 'react';
 import './index.css'
 import 'antd/dist/antd.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import MoviesCaroursel from './components/MoviesCarousel';
 import Trending from './pages/Trending';
 import Movies from './pages/Movies';
 import Series from './pages/Series';
 import Search from './pages/Search';
-import Detail from './pages/Detail';
 import Other from './pages/Other'
 
 

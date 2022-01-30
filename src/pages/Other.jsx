@@ -101,7 +101,7 @@ function Other() {
                                 <>
                                     <Youtube
                                         videoId={trailer.key}
-                                        className='absolute right-0 left-0 top-0 bottom-0 w-full h-[900px]'
+                                        className='absolute right-0 left-0 top-0 bottom-0 w-full h-[640px]'
                                         containerClassName={"youtube-container amru"}
                                         opts={{
                                             width: '100%',
@@ -121,17 +121,18 @@ function Other() {
                                     </button>
                                 </> :
                                 <div className="mx-[240px] my-0 first-letter:py-0 px-[15px] font-sans">
-                                    <div className="w-[80%] mt-[500px]">
+                                    <div className="w-[80%] mt-[600px]">
                                         <div className='flex flex-row space-x-3'>
                                         {trailer ?
-                                            <button className='' onClick={() => setPlaying(true)}
+                                            <button className='flex flex-row bg-[#1b8b9e] hover:bg-cyan-200 space-x-2 rounded-lg p-2' onClick={() => setPlaying(true)}
                                                 type="button">
-                                                    <PlayCircleFilledOutlined style={{  color: "#1b8b9e", marginBottom:'1px', cursor:'pointer', transform:"scale(1.6)" }} />
+                                                    <PlayCircleFilledOutlined style={{  color: "#fff",marginTop:'4px', cursor:'pointer', transform:"scale(1.3)" }} />
+                                                    <h1 className='text-white text-[22px] mt-[4px]'>Play Now</h1>
                                                     </button>
                                             : 'Sorry, no trailer available'}
                                         <h1 className='text-white text-[36px] mb-[10px]'>{movie.title}</h1>
                                         </div>
-                                        <p className='text-white'>{movie.overview}</p>
+                                        <p className='text-white mt-1'>{movie.overview}</p>
                                     </div>
                                 </div>}
                         </div>
