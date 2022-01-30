@@ -101,7 +101,7 @@ function Other() {
                                 <>
                                     <Youtube
                                         videoId={trailer.key}
-                                        className='absolute right-0 left-0 top-0 bottom-0 '
+                                        className='absolute right-0 left-0 top-0 bottom-0 w-full h-[900px]'
                                         containerClassName={"youtube-container amru"}
                                         opts={{
                                             width: '100%',
