@@ -2,7 +2,7 @@ import React from 'react';
 import { StarRate } from '@material-ui/icons';
 import { PlayCircleOutline } from '@material-ui/icons';
 import { img_500 } from '../config/config';
-import { Link } from 'react-router-dom'
+
 
 const Movie = ({movie, selectMovie}) => {
     const IMAGE_PATH = "https://image.tmdb.org/t/p/w342"
@@ -19,7 +19,7 @@ const Movie = ({movie, selectMovie}) => {
                       </div>
                     <button className='bg-[#3f4858] p-1 hover:bg-gray-400 flex items-center justify-center space-x-2'>
                     <PlayCircleOutline />
-                      <Link to='/detail' className='text-white  text-[14px] bottom-0' style={{ textDecoration: 'none' }}>Watch Now</Link>
+                      <h1 to='/detail' className='text-white  text-[14px] bottom-0' style={{ textDecoration: 'none' }}>Watch Now</h1>
                       </button>
                   </div>
                 </div>
